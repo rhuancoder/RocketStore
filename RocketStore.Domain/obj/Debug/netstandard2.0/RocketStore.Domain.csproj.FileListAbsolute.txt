@@ -1,0 +1,9 @@
+C:\Dev\RocketStore\RocketStore.Domain\bin\Debug\netstandard2.0\RocketStore.Domain.deps.json
+C:\Dev\RocketStore\RocketStore.Domain\bin\Debug\netstandard2.0\RocketStore.Domain.dll
+C:\Dev\RocketStore\RocketStore.Domain\bin\Debug\netstandard2.0\RocketStore.Domain.pdb
+C:\Dev\RocketStore\RocketStore.Domain\obj\Debug\netstandard2.0\RocketStore.Domain.csprojAssemblyReference.cache
+C:\Dev\RocketStore\RocketStore.Domain\obj\Debug\netstandard2.0\RocketStore.Domain.csproj.CoreCompileInputs.cache
+C:\Dev\RocketStore\RocketStore.Domain\obj\Debug\netstandard2.0\RocketStore.Domain.AssemblyInfoInputs.cache
+C:\Dev\RocketStore\RocketStore.Domain\obj\Debug\netstandard2.0\RocketStore.Domain.AssemblyInfo.cs
+C:\Dev\RocketStore\RocketStore.Domain\obj\Debug\netstandard2.0\RocketStore.Domain.dll
+C:\Dev\RocketStore\RocketStore.Domain\obj\Debug\netstandard2.0\RocketStore.Domain.pdb
