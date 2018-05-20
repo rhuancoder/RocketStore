@@ -1,9 +1,0 @@
-C:\Dev\RocketStore\RocketStore.Infra\bin\Debug\netstandard2.0\RocketStore.Infra.deps.json
-C:\Dev\RocketStore\RocketStore.Infra\bin\Debug\netstandard2.0\RocketStore.Infra.dll
-C:\Dev\RocketStore\RocketStore.Infra\bin\Debug\netstandard2.0\RocketStore.Infra.pdb
-C:\Dev\RocketStore\RocketStore.Infra\obj\Debug\netstandard2.0\RocketStore.Infra.csprojAssemblyReference.cache
-C:\Dev\RocketStore\RocketStore.Infra\obj\Debug\netstandard2.0\RocketStore.Infra.csproj.CoreCompileInputs.cache
-C:\Dev\RocketStore\RocketStore.Infra\obj\Debug\netstandard2.0\RocketStore.Infra.AssemblyInfoInputs.cache
-C:\Dev\RocketStore\RocketStore.Infra\obj\Debug\netstandard2.0\RocketStore.Infra.AssemblyInfo.cs
-C:\Dev\RocketStore\RocketStore.Infra\obj\Debug\netstandard2.0\RocketStore.Infra.dll
-C:\Dev\RocketStore\RocketStore.Infra\obj\Debug\netstandard2.0\RocketStore.Infra.pdb
