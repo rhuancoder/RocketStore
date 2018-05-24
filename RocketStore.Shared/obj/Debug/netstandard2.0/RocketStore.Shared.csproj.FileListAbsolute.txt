@@ -1,9 +1,0 @@
-C:\Dev\RocketStore\RocketStore.Shared\bin\Debug\netstandard2.0\RocketStore.Shared.deps.json
-C:\Dev\RocketStore\RocketStore.Shared\bin\Debug\netstandard2.0\RocketStore.Shared.dll
-C:\Dev\RocketStore\RocketStore.Shared\bin\Debug\netstandard2.0\RocketStore.Shared.pdb
-C:\Dev\RocketStore\RocketStore.Shared\obj\Debug\netstandard2.0\RocketStore.Shared.csprojAssemblyReference.cache
-C:\Dev\RocketStore\RocketStore.Shared\obj\Debug\netstandard2.0\RocketStore.Shared.csproj.CoreCompileInputs.cache
-C:\Dev\RocketStore\RocketStore.Shared\obj\Debug\netstandard2.0\RocketStore.Shared.AssemblyInfoInputs.cache
-C:\Dev\RocketStore\RocketStore.Shared\obj\Debug\netstandard2.0\RocketStore.Shared.AssemblyInfo.cs
-C:\Dev\RocketStore\RocketStore.Shared\obj\Debug\netstandard2.0\RocketStore.Shared.dll
-C:\Dev\RocketStore\RocketStore.Shared\obj\Debug\netstandard2.0\RocketStore.Shared.pdb
