@@ -13,7 +13,6 @@ namespace RocketStore.Domain.StoreContext.Entities
         public Order(Customer customer)
         {
             Customer = customer;
-            Number = Guid.NewGuid().ToString().Replace("-", "").Substring(0, 8).ToUpper();
             CreateDate = DateTime.Now;
             Status = EOrderStatus.Created;
             _items = new List<OrderItem>();
@@ -34,18 +33,51 @@ namespace RocketStore.Domain.StoreContext.Entities
             _items.Add(item);
         }
 
-        public void AddDelivery(Delivery delivery)
-        {
-            // Validate delivery
-
-            // Add to deliveries
-            _deliveries.Add(delivery);
-        }
-
-        // To Place An Order
+        // To place an order
         public void Place()
         {
+            // Generate the number of the order
+            Number = Guid.NewGuid().ToString().Replace("-", "").Substring(0, 8).ToUpper();
 
+            // Validate
+        }
+
+        // Pay an order
+        public void Pay()
+        {
+            Status = EOrderStatus.Paid;
+        }
+
+        // Ship an order
+        public void Ship()
+        {
+            // Every 5 products is a delivery
+            var deliveries = new List<Delivery>();
+            deliveries.Add(new Delivery(DateTime.Now.AddDays(5)));
+            var count = 1;
+
+            // Break the deliveries
+            foreach (var item in _items)
+            {
+                if (count == 5)
+                {
+                    count = 1;
+                    deliveries.Add(new Delivery(DateTime.Now.AddDays(5)));
+                }
+                count++;
+            }
+
+            // Ship all the deliveries
+            deliveries.ForEach(x => x.Ship());
+
+            // Add the deliveries to the order
+            deliveries.ForEach(x => _deliveries.Add(x));
+        }
+
+        // Cancel an order
+        public void Cancel(){
+            Status = EOrderStatus.Canceled;
+            _deliveries.ToList().ForEach(x => x.Cancel());
         }
     }
 }
