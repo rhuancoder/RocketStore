@@ -20,13 +20,16 @@ namespace RocketStore.Tests
             var cable = new Product("Cable", "Cable XYZ", "image.png", 29.90M, 10);
 
             var order = new Order(c);
-            order.AddItem(new OrderItem(mouse, 5));
-            order.AddItem(new OrderItem(keyboard, 5));
-            order.AddItem(new OrderItem(table, 5));
-            order.AddItem(new OrderItem(cable, 5));
+            //order.AddItem(new OrderItem(mouse, 5));
+            //order.AddItem(new OrderItem(keyboard, 5));
+            //order.AddItem(new OrderItem(table, 5));
+            //order.AddItem(new OrderItem(cable, 5));
 
             // Order realized
             order.Place();
+
+            // Verify that the order is valid
+            var valid = order.IsValid;
 
             // Simulate the payment
             order.Pay();

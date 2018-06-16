@@ -1,11 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using FluentValidator;
 using RocketStore.Domain.StoreContext.Enums;
 
 namespace RocketStore.Domain.StoreContext.Entities
 {
-    public class Order
+    public class Order : Notifiable
     {
         private readonly IList<OrderItem> _items;
         private readonly IList<Delivery> _deliveries;
@@ -40,6 +41,9 @@ namespace RocketStore.Domain.StoreContext.Entities
             Number = Guid.NewGuid().ToString().Replace("-", "").Substring(0, 8).ToUpper();
 
             // Validate
+            if (_items.Count == 0)
+                AddNotification("Order", "This order has no items");
+
         }
 
         // Pay an order
