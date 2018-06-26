@@ -26,11 +26,12 @@ namespace RocketStore.Domain.StoreContext.Entities
         public IReadOnlyCollection<OrderItem> Items => _items.ToArray();
         public IReadOnlyCollection<Delivery> Deliveries => _deliveries.ToArray();
 
-        public void AddItem(OrderItem item)
+        public void AddItem(Product product, decimal quantity)
         {
-            // Validate item
+            if (quantity > product.QuantityOnHand)
+                AddNotification("OrderItem", $"{product.Title} product does not have {quantity} items in stock.");
 
-            // Add to order
+            var item = new OrderItem(product, quantity);
             _items.Add(item);
         }
 
@@ -79,7 +80,8 @@ namespace RocketStore.Domain.StoreContext.Entities
         }
 
         // Cancel an order
-        public void Cancel(){
+        public void Cancel()
+        {
             Status = EOrderStatus.Canceled;
             _deliveries.ToList().ForEach(x => x.Cancel());
         }
