@@ -23,7 +23,7 @@ namespace RocketStore.Domain.StoreContext.Commands.OrderCommands.Inputs
                 .IsGreaterThan(OrderItems.Count, 0, "Items", "None Order Item is found")
             );
 
-            return Valid();
+            return IsValid;
         }
     }
 
