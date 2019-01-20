@@ -20,7 +20,7 @@ namespace RocketStore.Domain.StoreContext.Entities
             Type = type;
         }
 
-        public string Street { get; set; }
+        public string Street { get; private set; }
         public string Number { get; private set; }
         public string Complement { get; private set; }
         public string District { get; private set; }
