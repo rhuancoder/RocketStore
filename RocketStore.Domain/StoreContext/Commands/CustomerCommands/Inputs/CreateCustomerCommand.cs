@@ -1,4 +1,4 @@
-namespace RocketStore.Domain.StoreContext.CustomerCommands.Inputs
+namespace RocketStore.Domain.StoreContext.Commands.CustomerCommands.Inputs
 {
     public class CreateCustomerCommand
     {

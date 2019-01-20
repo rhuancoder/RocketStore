@@ -1,9 +1,9 @@
 using System;
 using RocketStore.Domain.StoreContext.Enums;
 
-namespace RocketStore.Domain.StoreContext.CustomerCommands.Inputs
+namespace RocketStore.Domain.StoreContext.Commands.CustomerCommands.Inputs
 {
-    public class AddAddressCommand
+    public class AddAddressComand
     {
         public Guid Id { get; set; }
         public string Street { get; set; }
