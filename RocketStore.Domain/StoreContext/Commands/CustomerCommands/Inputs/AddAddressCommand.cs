@@ -1,9 +1,11 @@
 using System;
+using FluentValidator;
 using RocketStore.Domain.StoreContext.Enums;
+using RocketStore.Shared.Commands;
 
 namespace RocketStore.Domain.StoreContext.Commands.CustomerCommands.Inputs
 {
-    public class AddAddressComand
+    public class AddAddressCommand : Notifiable, ICommand
     {
         public Guid Id { get; set; }
         public string Street { get; set; }
@@ -15,5 +17,10 @@ namespace RocketStore.Domain.StoreContext.Commands.CustomerCommands.Inputs
         public string Country { get; set; }
         public string ZipCode { get; set; }
         public EAddressType Type { get; set; }
+
+        bool ICommand.Valid()
+        {
+            return IsValid;
+        }
     }
 }
