@@ -1,10 +1,11 @@
 using FluentValidator;
+using RocketStore.Shared.Entities;
 using System;
 using System.Collections.Generic;
 
 namespace RocketStore.Domain.StoreContext.Entities
 {
-    public class OrderItem : Notifiable
+    public class OrderItem : Entity
     {
         public OrderItem(Product product, decimal quantity)
         {

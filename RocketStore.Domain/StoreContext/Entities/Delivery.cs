@@ -1,10 +1,11 @@
 using System;
 using FluentValidator;
 using RocketStore.Domain.StoreContext.Enums;
+using RocketStore.Shared.Entities;
 
 namespace RocketStore.Domain.StoreContext.Entities
 {
-    public class Delivery : Notifiable
+    public class Delivery : Entity
     {
         public Delivery(DateTime estimatedDeliveryDate)
         {

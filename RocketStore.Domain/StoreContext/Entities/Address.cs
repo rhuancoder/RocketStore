@@ -2,10 +2,11 @@ using System;
 using FluentValidator;
 using RocketStore.Domain.StoreContext.Enums;
 using RocketStore.Domain.StoreContext.ValueObjects;
+using RocketStore.Shared.Entities;
 
 namespace RocketStore.Domain.StoreContext.Entities
 {
-    public class Address : Notifiable
+    public class Address : Entity
     {
         public Address(string street, string number, string complement, string district, string city, string state, string country, string zipCode, EAddressType type)
         {

@@ -3,7 +3,7 @@ using FluentValidator;
 using FluentValidator.Validation;
 using RocketStore.Shared.Commands;
 
-namespace RocketStore.Domain.StoreContext.Commands.CustomerCommands.Inputs
+namespace RocketStore.Domain.StoreContext.Commands.CustomerCommands.Outputs
 {
     public class CreateCustomerCommandResult : ICommandResult
     {

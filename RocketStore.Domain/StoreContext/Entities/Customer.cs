@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using FluentValidator;
 using RocketStore.Domain.StoreContext.ValueObjects;
+using RocketStore.Shared.Entities;
 
 namespace RocketStore.Domain.StoreContext.Entities
 {
-    public class Customer : Notifiable
+    public class Customer : Entity
     {
         private readonly IList<Address> _addresses;
 

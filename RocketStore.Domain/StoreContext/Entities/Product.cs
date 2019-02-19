@@ -1,9 +1,10 @@
 using FluentValidator;
+using RocketStore.Shared.Entities;
 using System;
 
 namespace RocketStore.Domain.StoreContext.Entities
 {
-    public class Product : Notifiable
+    public class Product : Entity
     {
         public Product(string title, string description, string image, decimal price, decimal quantityOnHand)
         {
